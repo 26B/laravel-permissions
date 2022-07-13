@@ -39,6 +39,13 @@ class Editor extends Component
 	public string $query = '';
 
 	/**
+	 * Indicates if component is in search mode.
+	 *
+	 * @var boolean
+	 */
+	public bool $isSearching = false;
+
+	/**
 	 * Class that will handle searching and listing.
 	 *
 	 * @var string
@@ -93,6 +100,7 @@ class Editor extends Component
 	public function search() : void
 	{
 		$this->eligebleForPermission = $this->getAction()->search($this->query)->get();
+		$this->isSearching = true;
 	}
 
 	/**
@@ -104,6 +112,7 @@ class Editor extends Component
 	{
 		$this->eligebleForPermission = collect();
 		$this->query = '';
+		$this->isSearching = false;
 	}
 
 	/**
