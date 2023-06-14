@@ -99,6 +99,11 @@ class Editor extends Component
 	 */
 	public function search() : void
 	{
+		if (empty($this->query)) {
+			$this->resetSearch();
+			return;
+		}
+		
 		$this->eligebleForPermission = $this->getAction()->search($this->query)->get();
 		$this->isSearching = true;
 	}
