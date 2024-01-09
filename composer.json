@@ -4,8 +4,7 @@
     "type": "library",
     "require": {
         "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.14",
-        "livewire/livewire": "^2.10"
+        "spatie/laravel-package-tools": "^1.14"
     },
     "license": "MIT",
     "autoload": {

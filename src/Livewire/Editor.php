@@ -1,6 +1,6 @@
 <?php
 
-namespace TwentySixB\LaravelPermissions\Http\Livewire;
+namespace TwentySixB\LaravelPermissions\Livewire;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
@@ -99,6 +99,10 @@ class Editor extends Component
 	 */
 	public function search() : void
 	{
+		if (empty($this->query)) {
+			return;
+		}
+
 		$this->eligebleForPermission = $this->getAction()->search($this->query)->get();
 		$this->isSearching = true;
 	}

@@ -1,4 +1,5 @@
 <div>
+XXXX
 	@if ($usersWithPermission->isNotEmpty())
 	<div class="mb-6">
 		<h3 class="text-xs font-semibold tracking-wide text-gray-500 uppercase">{{ __('Users with permission') }}</h3>
@@ -27,7 +28,7 @@
 		<div class="sm:flex sm:items-center">
 			<label for="emails" class="sr-only">@lang('Search for')</label>
 			<div class="relative sm:min-w-0 sm:flex-1">
-				<input type="text" name="emails" id="emails" class="rounded-md shadow-sm block w-full pr-32 border-gray-300 focus:ring-green-500 focus:border-green-500 sm:text-sm" wire:model="query" placeholder="Enter a name or email">
+				<input type="text" name="emails" id="emails" autocomplete="off" class="rounded-md shadow-sm block w-full pr-32 border-gray-300 focus:ring-green-500 focus:border-green-500 sm:text-sm" wire:model="query" placeholder="Enter a name or email">
 			</div>
 			<div class="mt-3 sm:mt-0 sm:ml-4 sm:flex-shrink-0">
 				<button

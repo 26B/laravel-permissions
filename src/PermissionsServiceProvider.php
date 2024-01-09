@@ -4,7 +4,7 @@ namespace TwentySixB\LaravelPermissions;
 
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
-use TwentySixB\LaravelPermissions\Http\Livewire\Editor;
+use TwentySixB\LaravelPermissions\Livewire\Editor;
 use Livewire\Livewire;
 
 /**
