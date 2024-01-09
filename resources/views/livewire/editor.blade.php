@@ -1,5 +1,4 @@
 <div>
-XXXX
 	@if ($usersWithPermission->isNotEmpty())
 	<div class="mb-6">
 		<h3 class="text-xs font-semibold tracking-wide text-gray-500 uppercase">{{ __('Users with permission') }}</h3>
